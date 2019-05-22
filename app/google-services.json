@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "844569473448",
+    "firebase_url": "https://privatediary-c7ee2.firebaseio.com",
+    "project_id": "privatediary-c7ee2",
+    "storage_bucket": "privatediary-c7ee2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844569473448:android:4209f7af5a251282",
+        "android_client_info": {
+          "package_name": "com.bgmsoft.slowdiary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844569473448-apdd4n2gnqg9sc6hajbu6mmg3slrdfgv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bgmsoft.slowdiary",
+            "certificate_hash": "b3cb8af4f9e46a80f08d359b6e00867dce7358a9"
+          }
+        },
+        {
+          "client_id": "844569473448-ttq3bcdtpn7ee9sva4dr7eqq49k5sou5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9iTTppulel8q49qJ8AgVBoFnXVxlxP4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844569473448-ttq3bcdtpn7ee9sva4dr7eqq49k5sou5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
