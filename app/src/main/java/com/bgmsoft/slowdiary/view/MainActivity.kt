@@ -1,4 +1,4 @@
-package com.bgmsoft.slowdiary.ui
+package com.bgmsoft.slowdiary.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,8 +6,10 @@ import androidx.databinding.DataBindingUtil
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.bgmsoft.slowdiary.R
 import com.bgmsoft.slowdiary.databinding.ActivityMainBinding
+import com.bgmsoft.slowdiary.view.components.AutoClearedDisposable
+import com.bgmsoft.slowdiary.view.components.BaseActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private val viewDisposables = AutoClearedDisposable(this)

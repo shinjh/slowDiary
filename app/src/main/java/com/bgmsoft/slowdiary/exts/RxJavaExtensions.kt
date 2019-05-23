@@ -1,6 +1,6 @@
 package com.bgmsoft.slowdiary.exts
 
-import com.bgmsoft.slowdiary.ui.AutoClearedDisposable
+import com.bgmsoft.slowdiary.view.components.AutoClearedDisposable
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 

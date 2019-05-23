@@ -1,10 +1,10 @@
-package com.bgmsoft.slowdiary.ui
+package com.bgmsoft.slowdiary.view.components
 
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
-import com.bgmsoft.slowdiary.util.L
+import com.bgmsoft.slowdiary.utils.L
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 

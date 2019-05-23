@@ -1,4 +1,4 @@
-package com.bgmsoft.slowdiary.util
+package com.bgmsoft.slowdiary.utils
 
 import android.util.Log
 import com.bgmsoft.slowdiary.BuildConfig
