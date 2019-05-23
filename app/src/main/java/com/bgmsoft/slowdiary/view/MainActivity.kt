@@ -1,7 +1,6 @@
 package com.bgmsoft.slowdiary.view
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.bgmsoft.slowdiary.R
