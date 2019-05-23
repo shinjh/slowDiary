@@ -2,22 +2,25 @@ package com.bgmsoft.slowdiary.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.bgmsoft.slowdiary.R
-import com.bgmsoft.slowdiary.exts.plusAssign
-import com.bgmsoft.slowdiary.util.L
-import io.reactivex.Flowable
-
+import com.bgmsoft.slowdiary.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private var mFirebaseAnalytics: FirebaseAnalytics? = null
-
+    private lateinit var binding: ActivityMainBinding
     private val viewDisposables = AutoClearedDisposable(this)
+
+    private var mFirebaseAnalytics: FirebaseAnalytics? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        // layout binding
+        binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main).apply {
+            this.lifecycleOwner = this@MainActivity
+        }
 
         // Obtain the FirebaseAnalytics instance.
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this)
