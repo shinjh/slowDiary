@@ -11,6 +11,9 @@ ext {
     firebase_messaging_version = '18.0.0'
     firebase_core_version = '16.0.9'
 
+    // Google
+    google_play_services_auth_version = '16.0.1'
+
     // Reactive
     rx_android_version = '2.0.2'
     rx_java_version = '2.1.9'
