@@ -6,11 +6,11 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion compile_sdk_version
     defaultConfig {
         applicationId "com.bgmsoft.slowdiary"
-        minSdkVersion 21
-        targetSdkVersion 28
+        minSdkVersion min_sdk_version
+        targetSdkVersion target_sdk_version
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -28,12 +28,16 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     // AndroidX Library
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
 
     // Firebase Library
-    implementation 'com.google.firebase:firebase-messaging:18.0.0'
-    implementation 'com.google.firebase:firebase-core:16.0.9'
+    implementation "com.google.firebase:firebase-messaging:$firebase_messaging_version"
+    implementation "com.google.firebase:firebase-core:$firebase_core_version"
+
+    // RxJava Library
+    implementation "io.reactivex.rxjava2:rxandroid:$rx_android_version"
+    implementation "io.reactivex.rxjava2:rxjava:$rx_java_version"
 
     // Test Library
     testImplementation 'junit:junit:4.12'

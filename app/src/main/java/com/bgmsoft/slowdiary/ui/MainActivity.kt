@@ -1,12 +1,19 @@
-package com.bgmsoft.slowdiary
+package com.bgmsoft.slowdiary.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.analytics.FirebaseAnalytics
+import com.bgmsoft.slowdiary.R
+import com.bgmsoft.slowdiary.exts.plusAssign
+import com.bgmsoft.slowdiary.util.L
+import io.reactivex.Flowable
+
 
 class MainActivity : AppCompatActivity() {
 
     private var mFirebaseAnalytics: FirebaseAnalytics? = null
+
+    private val viewDisposables = AutoClearedDisposable(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
