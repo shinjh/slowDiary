@@ -1,3 +1,6 @@
 <resources>
 	<string name="app_name">slowDiary</string>
+
+	<!-- App Key -->
+	<string name="appkey_kakao" translatable="false">dca97ff03a8806322aaa6542d1f77ea9</string>
 </resources>

@@ -1,10 +1,12 @@
 package com.bgmsoft.slowdiary.view
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.bgmsoft.slowdiary.R
 import com.bgmsoft.slowdiary.databinding.ActivityMainBinding
+import com.bgmsoft.slowdiary.utils.SignatureHelper
 import com.bgmsoft.slowdiary.view.components.AutoClearedDisposable
 import com.bgmsoft.slowdiary.view.components.BaseActivity
 
@@ -25,6 +27,12 @@ class MainActivity : BaseActivity() {
 
         // Obtain the FirebaseAnalytics instance.
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this)
+
+        // TEST CODE
+        startActivity(Intent(this, SigninActivity::class.java))
+
+        val sig = SignatureHelper.getAppSignatures(this)
+
     }
 
     fun setLogEvent(id: String, name: String) {

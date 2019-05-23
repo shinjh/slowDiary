@@ -10,6 +10,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".view.SignupActivity">
+        </activity>
         <activity android:name=".view.WrittingActivity">
         </activity>
         <activity android:name=".view.ThemeActivity">
@@ -20,7 +22,7 @@
         </activity>
         <activity android:name=".view.DiaryActivity">
         </activity>
-        <activity android:name=".view.LoginActivity">
+        <activity android:name=".view.SigninActivity">
         </activity>
         <activity android:name=".view.SplashActivity">
         </activity>
@@ -32,6 +34,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <meta-data
+                android:name="com.kakao.sdk.AppKey"
+                android:value="@string/appkey_kakao"/>
 
         <service android:name=".service.push.MyFirebaseMessagingService">
             <intent-filter>

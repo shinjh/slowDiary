@@ -45,6 +45,10 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxandroid:$rx_android_version"
     implementation "io.reactivex.rxjava2:rxjava:$rx_java_version"
 
+    // Social Library
+    // 카카오 로그인 sdk를 사용하기 위해 필요.
+    implementation group: 'com.kakao.sdk', name: 'usermgmt', version: project.KAKAO_SDK_VERSION
+
     // Test Library
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
