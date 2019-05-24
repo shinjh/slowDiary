@@ -47,23 +47,11 @@ class SplashActivity : BaseActivity() {
 
     private fun startSigninActivity() {
         // 로그인 화면 실행
-        Handler().postDelayed({
-            Intent(this, SigninActivity::class.java).run {
-                startActivity(this)
-            }
-
-            finish()
-        }, DELAY_START_ACTIVITY)
+        Handler().postDelayed({ startActivityFinish<SigninActivity>() }, DELAY_START_ACTIVITY)
     }
 
     private fun startMainActivity() {
         // 메인 화면 실행
-        Handler().postDelayed({
-            Intent(this, MainActivity::class.java).run {
-                startActivity(this)
-            }
-
-            finish()
-        }, DELAY_START_ACTIVITY)
+        Handler().postDelayed({ startActivityFinish<MainActivity>() }, DELAY_START_ACTIVITY)
     }
 }
