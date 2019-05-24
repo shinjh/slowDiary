@@ -85,10 +85,6 @@ class SigninActivity : BaseActivity(), GoogleApiClient.OnConnectionFailedListene
 
     }
 
-    fun bindViews() {
-
-    }
-
     override fun onDestroy() {
         super.onDestroy()
 

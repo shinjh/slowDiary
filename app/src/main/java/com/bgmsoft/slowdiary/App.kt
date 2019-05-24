@@ -3,6 +3,7 @@ package com.bgmsoft.slowdiary
 import android.app.Activity
 import android.app.Application
 import android.content.Context
+import com.bgmsoft.slowdiary.db.SharedPrefs
 import com.kakao.auth.*
 import com.kakao.auth.KakaoSDK
 import com.kakao.auth.IApplicationConfig
@@ -14,6 +15,7 @@ class App : Application() {
         super.onCreate()
 
         context = this
+        prefs = SharedPrefs(this)
 
         KakaoSDK.init(KakaoSDKAdapter())
     }
@@ -54,6 +56,8 @@ class App : Application() {
     companion object {
         private lateinit var context: Context
         private lateinit var topActivity: Activity
+
+        lateinit var prefs: SharedPrefs
 
         fun getGlobalApplicationContext() = context
     }
